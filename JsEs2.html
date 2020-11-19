@@ -3,7 +3,7 @@
     <title>es 2</title>
   </head>
   <body id="body1">
-    <h1>Es1</h1>
+    <h1 id="sksk">Es1</h1>
     <p>
       Pagina html statica, includi un file javascript, aggiungi un bottone,
       aggiungi un click listener al bottone che cambia il contenuto di un tag
@@ -21,5 +21,23 @@
 
     <script src="JsEs2.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        console.log($("div")[0]);
+        console.log($("#sksk")[0].innerHTML);
+        $("#sksk").html("esercizio");
+        console.log($("#sksk")[0].innerHTML);
+
+        $("#div1").attr("style","background-color:rgb(158, 54, 145");
+        console.log($("#div1")[0].innerHTML);
+
+        $("#div1").css("background-color", "rgb(23, 54, 145");
+        console.log($("#div1")[0].innerHTML);
+        $("#span1").html("c'è ancora il bottone");
+        console.log($("#span1")[0].innerHTML);
+        $("#div1").html("no");
+        console.log($("#div1")[0].innerHTML);
+
+        var isco = $("body").append($("<h3>wow</h3>"));
+    </script>
   </body>
 </html>
